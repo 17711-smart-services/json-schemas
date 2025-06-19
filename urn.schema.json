@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.17711.eu/schema/urn.schema.json",
+  "title": "URN",
+  "version": "1.0.0",
+  "description": "A unique and semantic identifier using the format:\n\n  φrn:<reverse-domain>:<type>[:<subtype1>:<subtype2>:...]:<id>\n\nThis URN-like structure is:\n- based on reversed domain naming (e.g., `org.17711`, `com.example.app`),\n- composable with a variable number of subcategories (type/subtype...),\n- supports either a readable ID (`slug`, `username`, etc.) or a base58-encoded content-based hash (min 10 chars).\n\nInspired by URN, DID, IPFS-style CIDs, and decentralized naming systems.",
+  "type": "string",
+  "pattern": "^φrn:([a-z0-9.-]+(?:\\.[a-z0-9.-]+)*):([a-z0-9._-]+(?::[a-z0-9._-]+)*):([1-9A-HJ-NP-Za-km-z]{10,}|[a-zA-Z0-9_.@-]+)$",
+  "examples": [
+    "φrn:org.17711:user:account:john.doe",
+    "φrn:org.17711:text:document:3VJrHKshvBz9ToZ4kM",
+    "φrn:org.17711.video:project:7RZ1mM28aK7FktQ2F4",
+    "φrn:org.17711.image:processed:5zHzU4eXzqcGTNu",
+    "φrn:org.17711:media:audio:sample:8PqrsLu1tYkM2Nc",
+    "φrn:org.17711:ai:model:openchat:42rHTNpG4zW",
+    "φrn:org.17711:cv:experience:freelance:bitcoindev:2021-2023",
+    "φrn:org.17711:project:pipeline:video:alpha:79JszTUkpS8",
+    "φrn:org.17711:cv:skill:python",
+    "φrn:org.17711:cv:profile:alex-2025"
+  ],
+  "author": {
+    "name": "🐚 17711 Smart Services",
+    "url": "https://17711.eu",
+    "email": "contact+github@17711.eu"
+  },
+  "maintainers": [
+    {
+      "name": "Paul Milton",
+      "url": "https://17711.eu",
+      "email": "paul.milton@17711.eu"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Paul Milton",
+      "url": "https://17711.eu",
+      "email": "paul.milton@17711.eu"
+    }
+  ],
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "identifier": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "homepage": "https://schemas.17711.org/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/17711-smart-services/json-schemas"
+  },
+  "meta": {
+    "created": "2025-06-18",
+    "modified": "2025-06-18",
+    "status": "stable",
+    "language": "en",
+    "domain": "identifiers",
+    "tags": [
+      "URN",
+      "DID",
+      "identifiers",
+      "base58",
+      "content-addressable",
+      "semantic",
+      "decentralized",
+      "resource"
+    ]
+  },
+  "copyright": "© 2025, 17711 Smart Services — https://17711.eu"
+}
