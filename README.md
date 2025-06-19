@@ -50,7 +50,7 @@ You can reference any schema directly via its `$id`. For instance, to use the `u
 ```json
 {
   "$schema": "[https://json-schema.org/draft/2020-12/schema](https://json-schema.org/draft/2020-12/schema)",
-  "$ref": "[https://schemas.17711.org/schema/urn.schema.json](https://schemas.17711.org/schema/urn.schema.json)"
+  "$ref": "[https://schemas.17711.eu/schema/urn.schema.json](https://schemas.17711.eu/schema/urn.schema.json)"
 }
 ```
 
