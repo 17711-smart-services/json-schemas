@@ -31,7 +31,7 @@ This repository contains JSON Schema definitions maintained by **17711 Smart Ser
 
 | Schema | $id |
 | :------- | :-------------------------------------------------------------------------------------- | 
-| `[./urn.shema.json](urn.schema.json)` | [`https://schemas.17711.eu/schema/urn.schema.json`](https://schemas.17711.eu/schema/urn.schema.json)
+| `[ΦRN Schema]`(./urn.shema.json) | [`https://schemas.17711.eu/schema/urn.schema.json`](https://schemas.17711.eu/schema/urn.schema.json)
 
 *All schemas are fully JSON Schema Draft 2020-12 compliant and versioned.*
 
